@@ -21,11 +21,11 @@ export const Ground = (props) => {
         <Plane
             ref={ref}
             receiveShadow
-            onClick={(e) => {
-                e.stopPropagation();
-                const { x, y, z } = e.point;
-                addCube(Math.ceil(x), Math.ceil(y), Math.ceil(z), type);
-            }}
+//             onClick={(e) => {
+//                 e.stopPropagation();
+//                 const { x, y, z } = e.point;
+//                 addCube(Math.ceil(x), Math.ceil(y), Math.ceil(z), type);
+//             }}
         >
             <planeBufferGeometry attach="geometry" args={[1000, 1000]} />
             <meshStandardMaterial map={texture} attach="material" />
