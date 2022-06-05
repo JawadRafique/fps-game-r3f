@@ -5,18 +5,10 @@ import * as texture from "../textures";
 
 export const Cube = ({ position, type, ...props }) => {
     const [ref] = useBox(() => ({
-        // type: "Static",
-        // args: [1, 1, 1],
         mass: 1,
         position,
         ...props,
-        // onCollideEnd: (e) => console.log(e),
-        // isTrigger: true,
     }));
-
-    useEffect(() => {
-        console.log("ref.current", ref.current);
-    }, [ref]);
 
     return (
         <>
